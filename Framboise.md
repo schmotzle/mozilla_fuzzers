@@ -112,17 +112,27 @@ class SyzyListener extends Listener{};
 
 Monitor classes
 
-```Dot
-class Monitor{
-  public void add_listener;
-  
-  public boolean detect_fault;
-};
+![Alt text](http://g.gravizo.com/g?
+/**
+*@opt all
+*@note Thread
+*/
+class Monitor {
+        public Void add_listener;
+        public Boolean detect_fault;
+}
+/**
+*@opt shape activeclass
+*@opt all
+*/
+class ConsoleMonitor extends Monitor{};
+/**
+*@opt shape activeclass
+*@opt all
+*/
+class WebSocketMonitor extends Monitor{};
+)
 
-class ConsoleMonitor extends Monitor;
-class WebSocketMonitor extends Monitor;
-
-```
 
 Plugins
 
