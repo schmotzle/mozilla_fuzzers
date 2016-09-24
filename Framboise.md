@@ -117,20 +117,22 @@ Monitor classes
 *@opt all
 *@note Thread
 */
-class Monitor {
+class Monitor implements Listener{
         public Void add_listener;
         public Boolean detect_fault;
-}
+};
 /**
-*@opt shape activeclass
 *@opt all
 */
 class ConsoleMonitor extends Monitor{};
 /**
-*@opt shape activeclass
 *@opt all
 */
 class WebSocketMonitor extends Monitor{};
+/**
+*@opt all
+*/
+interface Listener{};
 )
 
 
