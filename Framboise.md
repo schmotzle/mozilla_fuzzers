@@ -82,19 +82,33 @@ cd framboise.git
 
 Listener classes
 
-![listener classes](http://g.gravizo.com/g?
-
-class Listener{
-  public void process_line;
-  public string get_data;
-  public Boolean detected_fault;
+![Alt text](http://g.gravizo.com/g?
+/**
+*@opt all
+*@note Object
+*/
+class Listener {
+        public Void process_line;
+        public String get_data;
+        public Boolean detect_fault;
 }
-
+/**
+*@opt shape activeclass
+*@opt all
+*/
 class TestcaseListener extends Listener{};
+/**
+*@opt shape activeclass
+*@opt all
+*/
 class AsanListener extends Listener{};
+/**
+*@opt shape activeclass
+*@opt all
+*/
 class SyzyListener extends Listener{};
-
 )
+
 
 Monitor classes
 
