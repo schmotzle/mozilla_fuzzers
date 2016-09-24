@@ -82,7 +82,6 @@ cd framboise.git
 
 Listener classes
 
-```dot
 ![listener classes](http://g.gravizo.com/g?
 
 class Listener{
@@ -96,7 +95,6 @@ class AsanListener extends Listener{};
 class SyzyListener extends Listener{};
 
 )
-```
 
 Monitor classes
 
