@@ -80,7 +80,7 @@ cd framboise.git
 
 ## Internals
 
-Listener classes
+### Listener classes
 
 ![Alt text](http://g.gravizo.com/g?
 /**
@@ -109,8 +109,10 @@ class AsanListener extends Listener{};
 class SyzyListener extends Listener{};
 )
 
+* TestcaseListener searches json data within the recorded input and returns it via "get_data" call. "detected_fault" returns always True.
+* AsanListener searches for string "ERROR: AddressSanitizer" within the recorded input. "detected_fault" returns True if the string was found and False if not.
 
-Monitor classes
+### Monitor classes
 
 ![Alt text](http://g.gravizo.com/g?
 /**
@@ -136,9 +138,6 @@ interface Listener{};
 )
 
 
-Plugins
+### Plugins
 
-```Dot
-
-```
 
