@@ -109,9 +109,9 @@ class AsanListener extends Listener{};
 class SyzyListener extends Listener{};
 )
 
-* TestcaseListener searches json data within the recorded input and returns it via "get_data" call. "detected_fault" returns always True.
-* AsanListener searches for string "ERROR: AddressSanitizer" within the recorded input. "detected_fault" returns True if the string was found and False if not.
-* SyzyListener searches for string "SyzyASAN error:" within the recorded input. "detected_fault" returns True if the string was found and False if not.
+* TestcaseListener searches json data within the recorded input and returns it via "get_data" call. "detected_fault" returns always True. Returns data to bucket 'testcase'.
+* AsanListener searches for string "ERROR: AddressSanitizer" within the recorded input. "detected_fault" returns True if the string was found and False if not. Returns data to bucket 'crashlog'.
+* SyzyListener searches for string "SyzyASAN error:" within the recorded input. "detected_fault" returns True if the string was found and False if not. Returns data to bucket 'crashlog'.
 
 ### Monitor classes
 
