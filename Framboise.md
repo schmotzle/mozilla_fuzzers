@@ -80,6 +80,8 @@ cd framboise.git
 
 ## Internals
 
+Framboise is written in python and javascript. The python file framboise.py is responsible for setting up a testing environment by starting the target-process, framboise-monitors and framboise-plugins. The environment is described in YAML format saved under the settings directory. After the environment is setup the main fuzzing component (written in javascript) is started using parameters from the YAML config and from command line arguments. The javascript files are then trying to fuzz the defined WebAPI.
+
 ### Listener classes
 
 ![Alt text](http://g.gravizo.com/g?
