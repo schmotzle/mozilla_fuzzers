@@ -141,6 +141,35 @@ interface Listener{};
 
 ### Plugins
 
+![Alt text](http://g.gravizo.com/g?
+/**
+*@opt all
+*/
+class BasePlugin{
+        public Void open;
+        public Boolean stop;
+};
+/**
+*@opt all
+*/
+class ExternalProcess extends BasePlugin{};
+/**
+*@opt all
+*/
+class DefaultPlugin extends BasePlugin{};
+/**
+*@opt all
+*/
+class FirefoxPlugin extends BasePlugin{};
+/**
+*@opt all
+*/
+class IexplorerPlugin extends BasePlugin{};
+/**
+*@opt all
+*/
+class B2G_EmulatorPlugin extends BasePlugin{};
+)
 
 ## Pitfalls
 
